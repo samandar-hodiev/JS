@@ -1,0 +1,206 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#theme {
+    appearance: none;
+    border: 2px solid rgb(255, 255, 255);
+    display: block;
+    width: 70px;
+    height: 32px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+#theme::after {
+    content: " ";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transform: translateX(0px);
+    transition: all 0.3s ease;
+}
+
+#theme:checked::after {
+    background-color: rgb(53, 53, 53);
+    transform: translateX(37px);
+    transition: all 0.3s ease;
+}
+
+aside .form-input {
+    width: 90%;
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 16px;
+    color: black;
+}
+
+form{
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- cards section ------------------------- */
+.card{
+    width:380px;
+    height:780px;
+    background-color:white;
+    border-radius: 12px;
+    box-shadow: 0 0 12px silver;
+    transition: all 0.1s ease;
+}
+
+.card:hover{
+    box-shadow: 1px 2px 18px rgb(178, 177, 177);
+}
+
+.card img{
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+
+
+.card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card .card-body{
+    /* background-color: yellow; */
+    width: 100%;
+    height:380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.card-body h2{
+    font-size:24px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.card-body ul{
+    /* background-color: green; */
+    width: 100%;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body ul li{
+    line-height:24px;
+}
+
+.card-body ul li strong {
+    font-size:22px;
+    font-weight: 600;
+}
+
+
+.card-body ul li span {
+    font-size:17px;
+    font-weight:500;
+}
+
+.card-body .flex{
+    /* background-color: blue; */
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body .flex button:first-child{
+    width: 140px;
+    height: 54px;
+    background-color: #F94C10;
+    color: #fff;
+    border-radius:12px;
+    transition:all 0.2s ease;
+}
+
+.card-body .flex button:first-child:hover{
+    background-color: #e13c05;
+}
+
+.card-body .flex button:first-child:active{
+    background-color: #c73201c9;
+}
+
+.card-body .flex button:last-child{
+    width: 54px;
+    height: 54px;
+    /* background-color: #F94C10; */
+    border: 1px solid silver;
+    padding-top: 3px;
+    border-radius: 12px;
+    transition:all 0.2s ease;
+    display: grid;
+    place-content: center;
+}
+
+.card-body .flex button:last-child i{
+    /* color:white; */
+    font-size:30px;
+    display: flex;
+}
+
+.heart-red{
+    color: rgb(194, 0, 0);
+}
+
+
+
+
+
+
+
+/* ------------------------------- Loader ------------------------------- */
+.loader{
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 140px;
+    background-image: 
+    linear-gradient(#FFF 20px, transparent 0), 
+    linear-gradient(#FFF 20px, transparent 0), 
+    linear-gradient(#FFF 20px, transparent 0), 
+    linear-gradient(#FFF 20px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: 0 0, 40px 0, 80px 0, 120px 0;
+    animation: pgfill 1s linear infinite;
+  }
+  
+  @keyframes pgfill {
+    0% {   background-image: linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
+    25% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
+    50% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
+    75% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
+    100% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0); }
+  }
+  
