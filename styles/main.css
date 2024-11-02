@@ -174,13 +174,18 @@ form{
 }
 
 
+#search-btn{
+    color:#9ca3af;
+}
+
 
 
 
 
 
 /* ------------------------------- Loader ------------------------------- */
-.loader{
+
+ .loader{
     display: block;
     position: relative;
     height: 20px;
@@ -202,5 +207,4 @@ form{
     50% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
     75% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0); }
     100% {   background-image: linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0), linear-gradient(#FF3D00 20px, transparent 0); }
-  }
-  
+  } 
