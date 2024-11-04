@@ -16,9 +16,9 @@
     <header class="bg-[#900C3F]">
         <div class="container  mx-auto">
             <nav class="flex justify-between items-center h-[100px] px-3">
-                <a href="#"
+                <a href="./index.html"
                     class="text-white font-bold  sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl pr-2 hidden sm:block">Movies.uz</a>
-                <div class="w-[90%] sm:w-[260px] md:w-[320px] lg:w-[320px] xl:w-[520px] 2xl:w-[520px] flex items-center space-between bg-white rounded-[32px] pl-5 pr-6">
+                <div class="w-[90%] sm:w-[260px] md:w-[320px] lg:w-[320px] xl:w-[520px] 2xl:w-[520px] flex items-center space-between bg-[#e3eeff] rounded-[32px] pl-5 pr-6">
                     <input id="search" type="search" name="#"   placeholder="Enter film name"
                         class="px-3 py-2 rounded-[32px] w-full border-none outline-none bg-inherit">
                         <i id="search-btn" class="bi bi-search  text-white text-[28px] cursor-pointer"></i>
@@ -28,7 +28,7 @@
                     <li class="hidden sm:hidden md:block lg:block xl:block 2xl:block">
                         <div id="liked" class="text-white flex  items-center px-[8px]">
                             <span><i class="bi bi-star text-xl"></i></span>
-                            <span class="ml-2">0</span>
+                            <span class="ml-2" id="like-count">0</span>
                         </div>
                     </li>
                     <li class="mr-6 sm:mr-6 md:mr-0 lg:mr-0 xl:mr-0 2xl:mr-0 ml-3">
@@ -75,7 +75,7 @@
                         <option value="select" disabled selected>Select film genres</option>
                     </select>
                 </label>
-                <button type="submit" class="w-[90%] bg-[#F8DE22] text-black py-1 rounded-2xl focus:ring-4 ring-yellow-200 mt-4">
+                <button id="searcher-btn" type="submit" class="w-[90%] bg-[#F8DE22] text-black py-1 rounded-2xl focus:ring-4 ring-yellow-200 mt-4">
                     search
                 </button>
             </form>
